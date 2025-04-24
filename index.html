@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Trascenti</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<!-- Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script defer src="app.js"></script>
+</head>
+<body>
+
+<div id="navbar">
+    <div>
+        <img src="images/logo.png" alt="Logo" id="navlogo">
+    </div>
+    <div id="navlinks">
+        <a href="#home">Inicio</a>
+        <a href="#services">Servicios</a>
+        <a href="#testimonials">Casos de exito</a>
+        <a href="#contact">Contacto</a>
+        <a href="#about">Nosotros</a>
+        <a href="#blog">Blog</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+    </div>
+    <div id="schedule">
+        <button>Contáctanos</button>
+    </div>
+</div>
+<!-- Hero Section -->
+ <!-- The What -->
+<div class="hero">
+    <div>
+        <div>
+            <h1>Bienvenido a <mark>Trascenti</mark>.<br>Desarrollamos software.</h1>
+            <p>Haz realidad tus ideas, <br>te ayudamos a construirlas e implementarlas.</p>
+        </div>
+        <div>
+            <img src = "images/Mobile wireframe-amico.svg" alt="My tech SVG"/>
+            <a href="https://storyset.com/technology">Technology illustrations by Storyset</a>
+        </div>
+    </div>
+</div>
+<!-- Services Section -->
+ <!-- The How -->
+<div class= "page">
+    <div id="servicesdiv">
+        <div class="pageheader">
+            <h1>Desarrollamos para ti.</h1>
+        </div>
+        <div class="cardscontainer">
+            <div class="card-hidden">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#E0FBFC" viewBox="0 0 256 256"><path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM80,84A12,12,0,1,1,68,72,12,12,0,0,1,80,84Zm40,0a12,12,0,1,1-12-12A12,12,0,0,1,120,84Z"></path></svg>
+                </div>
+                <div class="cardheader">
+                    <h2>Aplicaciones</h2>
+                </div>
+                <div class="cardcontent">
+                    <p>Desarrollamos tu idea en aplicaciones multiplataforma..</p>
+                </div>
+            </div>
+            <div class="card-hidden">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#E0FBFC" viewBox="0 0 256 256"><path d="M216,40H72A16,16,0,0,0,56,56V72H40A16,16,0,0,0,24,88V200a16,16,0,0,0,16,16H184a16,16,0,0,0,16-16V184h16a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40ZM184,88v16H40V88Zm0,112H40V120H184v80Zm32-32H200V88a16,16,0,0,0-16-16H72V56H216Z"></path></svg>
+                </div>
+                <div class="cardheader">
+                    <h2>Servicios Web</h2>
+                </div>
+                <div class="cardcontent">
+                    <p>Impulsa tu negocio con servicios en la red.</p>
+                </div>
+            </div>
+            <div class="card-hidden">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#E0FBFC" viewBox="0 0 256 256"><path d="M200,48H136V16a8,8,0,0,0-16,0V48H56A32,32,0,0,0,24,80V192a32,32,0,0,0,32,32H200a32,32,0,0,0,32-32V80A32,32,0,0,0,200,48Zm16,144a16,16,0,0,1-16,16H56a16,16,0,0,1-16-16V80A16,16,0,0,1,56,64H200a16,16,0,0,1,16,16Zm-52-56H92a28,28,0,0,0,0,56h72a28,28,0,0,0,0-56Zm-24,16v24H116V152ZM80,164a12,12,0,0,1,12-12h8v24H92A12,12,0,0,1,80,164Zm84,12h-8V152h8a12,12,0,0,1,0,24ZM72,108a12,12,0,1,1,12,12A12,12,0,0,1,72,108Zm88,0a12,12,0,1,1,12,12A12,12,0,0,1,160,108Z"></path></svg>
+                </div>
+                <div class="cardheader">
+                    <h2>Automatización de procesos</h2>
+                </div>
+                <div class="cardcontent">
+                    <p>Elimina tareas, estandariza y encuentra nuevas y mejores maneras de trabajar.</p>
+                </div>
+            </div>
+            <div class="card-hidden">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#E0FBFC" viewBox="0 0 256 256"><path d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32Zm0,176H48V48H208V208Zm-32-80a8,8,0,0,1-8,8H136v32a8,8,0,0,1-16,0V136H88a8,8,0,0,1,0-16h32V88a8,8,0,0,1,16,0v32h32A8,8,0,0,1,176,128Z"></path></svg>
+                </div>
+                <div class="cardheader">
+                    <h2>Y mucho más...</h2>
+                </div>
+                <div class="cardcontent">
+                    <p>Buscamos las mejores soluciones para cualquier tipo de problema.</p>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="pageheader">
+            <h1>Desarrollamos para ti.</h1>
+        </div>
+        <div class="cardscontainer">
+            <div class="card">
+                <h2>Consultoría</h2>
+                <p>Te ayudamos a encontrar la mejor solución para tu empresa.</p>
+            </div>
+            <div class="card">
+                <h2>Desarrollo</h2>
+                <p>Desarrollamos software a la medida de tus necesidades.</p>
+            </div>
+            <div class="card">
+                <h2>Integración</h2>
+                <p>Integramos tus sistemas para que trabajen juntos.</p>
+            </div>
+        </div> -->
+        <!-- <div id="servicesleft">
+            <h2 style="color:#98C1D9;">Como te podemos ayudar</h2>
+            <p>Haz pensado en como la tecnologia puede serte util, te ayudamos a encontrar soluciones.</p>
+            <p>Unlock smarter, faster decisions by digitizing your assets—transform raw data into actionable insights that drive efficiency, reduce costs, and boost competitive advantage.</p>
+            <p>Crees que la tecnologia puede ayudarte a alcanzar tus objetivos</p>
+            <p>Haz escuchado de la nube, internet de las cosas, Machine Learnind, IA, y mas y que todo el mundo esta saltando a eso pero no sabes en que te puede ayudar</p>
+            <p>Tienes una idea de una aplicación o software, te ayudamos</p>
+            <p>Sabes del poder de la información y como puede ayudar pero no encuentras como hazerla trabajar para ti</p>
+            <p>Crees que puedes hacer los procesos de tu compañia mas eficiente usando la automatización y la tecnologia</p>	
+        </div>
+        <div id="servicesright">
+            <img src="images/charts.jpg" alt="Charts">
+        </div> -->
+    </div>
+</div>
+<!-- Nosotros -->
+ <!-- The Why (or the who?) -->
+<div class= "page">
+    <div id="whypage">
+        <div class="pageheader">
+            <h1>Nuestras metas.</h1>
+        </div>
+        <div id="whypagecontent">
+            <div>
+                <h2>Mejores oportunidades</h2>
+                <p>Queremos que los negocios, grandes o pequeños tengan mejores oportunidades aprovechando los recursos tecnologicos.</p>
+            </div>
+            <div>
+                <h2>Desarrollar mejores productos</h2>
+                <p>Reconocemos que la tecnología impulsa y crea nuevas oportunidades.</p>
+            </div>
+            <div>
+                <h2>Ayudar localmente</h2>
+                <p>Estamos convencidos de que hay un amplio mercado local, impulsamos a un mejor ecosistema de soluciones con mayor alcance.</p>
+            </div>
+            <div>
+                <h2>Eliminar barreras tecnológicas</h2>
+                <p>Conocemos el reto de adoptar la tecnología, por lo que nos hacemos cargo de esas difucltades para permitir que nuestros clientes se enfoquen en su valor.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contacto -->
+<div class= "page">
+    <div id="contactpage">
+        <div class="pageheader">
+            <h1>Contáctanos</h1>
+        </div>
+        <div id="contactpagecontent">
+            <div>
+                <h2>¿Tienes un proyecto en mente?</h2>
+                <p>Cuéntanos de el, podemos ayudarte a desarrollarlo.</p>
+            </div>
+    </div>
+    <div id="contactform">
+        <form>
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="message">Mensaje:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
+        </div>
+    </div>
+</body>
+</html> 
