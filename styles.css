@@ -93,6 +93,28 @@ body{
         text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);   
     }
 }
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 100vh;
+        div {
+            flex-direction: column;
+            align-items: center;
+            div {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                justify-content: center;
+            }
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    }
+    
+}
 #navbar{
     z-index: 1;
     /* Blurry background, I opted it out */
@@ -213,7 +235,7 @@ body{
 }
 .pageheader{
     color: var(--color-trascenti-accent);
-    font-size: min(5vw, 1.5rem);
+    font-size: 1.5rem;
     margin-top: 0;
     text-align: center;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);   
@@ -270,7 +292,7 @@ body{
         /* transition: transform 0.3s; */
         h2{
             text-align: left;
-            font-size: min(1.25rem, 1.5rem);
+            font-size: 1.25rem;
         };
         .cardheader {
             min-height: 72px;
@@ -339,19 +361,20 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-evenly;
+    border: red solid 1px;
     width: 100%;
     height: 100%;
     h2 {
         color: var(--color-trascenti-a-analogous1);
-        font-size: min(5vw, 1.5rem);
+        font-size: 1.5rem;
         margin-top: 15px;
         text-align: left;
         text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);   
     };
     p{
         color: var(--color-lightest);
-        font-size: min(5vw, 1.2rem);
+        font-size: 1.2rem;
         margin-top: 0;
         text-align: left;
         text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);   
@@ -377,14 +400,14 @@ body{
     height: 100%;
     h2 {
         color: var(--color-trascenti-a-analogous1);
-        font-size: min(5vw, 1.5rem);
+        font-size: 1.5rem;
         margin-top: 15px;
         text-align: left;
         text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);   
     };
     p{
         color: var(--color-lightest);
-        font-size: min(5vw, 1.2rem);
+        font-size: 1.2rem;
         margin-top: 0;
         text-align: left;
         text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);   
@@ -399,7 +422,7 @@ body{
     height: 100%;
     label {
         color: var(--color-trascenti-a-analogous1);
-        font-size: min(5vw, 1.5rem);
+        font-size: 1.5rem;
         margin-top: 15px;
         text-align: left;
         text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);   
