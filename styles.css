@@ -357,6 +357,10 @@ body{
         /* object-position: 100% 0; */
     }
 }
+#whypage {
+    display: flex;
+    flex-direction: column;
+}
 #whypagecontent {
     display: flex;
     flex-direction: column;
