@@ -53,6 +53,9 @@ a{
 button{
     font-size: 1.2rem;
 }
+icon{
+    font-size: 1.2rem;
+}
 @media (max-width: 980px) {
     html {
         font-size: 32px; /* 14px */
@@ -300,8 +303,8 @@ button{
         transform: translateX(-100%);
         background-color: var(--color-trascenti-a-tetrad2);
         color: var(--color-lightest);
-        width: min(250px, 80vw);
-        height: 250px;
+        width: 18vw;
+        height: 40vh;
         margin: 20px;
         padding: 20px;
         border-radius: 10px;
@@ -319,6 +322,11 @@ button{
             text-align: left;
             font-size: 1.25rem;
         }
+        svg{
+            width: 2rem;
+            height: 2rem;
+            margin-bottom: 10px;
+        }
         .cardheader {
             min-height: 72px;
         }
@@ -329,6 +337,26 @@ button{
     @media (prefers-reduced-motion) {
         .card-hidden {
             transition: none;
+        }
+    }
+    /* Adjusting font size & cards for smaller screens */
+    @media (max-width: 980px) {
+        .card-hidden {
+            width: 40vw;
+            max-height: 25vh;
+            /* height: 200px; */
+            /* margin: 10px;
+            padding: 10px; */
+        }
+        svg{
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+        h2 {
+            font-size: 1.25rem;
+        }
+        p{
+            font-size: 1rem;
         }
     }
 
@@ -469,7 +497,7 @@ button{
         background-color: whitesmoke;
         border-radius: 10px;
         padding: 10px;
-        width: min(300px, 80vw);
+        width: 60vw;
     };
     input[type=submit] {
         background-color: transparent;
@@ -480,6 +508,8 @@ button{
         padding-left: 20px;
         padding-right: 20px;
         border-radius: 50px;
+        width: 50%;
+        text-align: center;
         border:solid 2px var(--color-trascenti-a-analogous1);
         transition: background-color 0.3s, color 0.3s;
     };
