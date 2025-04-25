@@ -257,11 +257,8 @@ body{
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        /* justify-content: space-evenly; */
         width: 100%;
-        flex-grow: 1;
-        /* background-color: var(--color-darkest); */
-        /* border: red solid 1px; */
+        /* flex-grow: 1; */
     }
     .card-hidden:nth-child(2) {
         transition-delay: 200ms;
@@ -360,6 +357,9 @@ body{
 #whypage {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
+    flex-grow: 1;
 }
 #whypagecontent {
     display: flex;
