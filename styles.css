@@ -23,11 +23,21 @@
     --color-lightest: #E0FBFC;
     --color-highlight: #EE6C4D;
 }
+html {
+    font-size: 100%; /* 16px */
+}
 body{
     margin: 0;
     font-family: 'Familjen Grotesk';
+    font-size: 1rem; /* 16px */
+    line-height: 1.5;
     background-color: var(--color-trascenti-main);
     color: var(--color-lightest);
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 0.875rem; /* 14px */
+    }
 }
 .hero{
     background-color: var(--color-trascenti-main);
@@ -66,7 +76,7 @@ body{
     h1 {
         color: rgb(255, 255, 255);
         text-align: center;
-        font-size: 2.5em;
+        font-size: 2.5rem;
         margin-top: 0;
         text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);   
         mark {
@@ -78,7 +88,7 @@ body{
     p {
         color: rgb(255, 255, 255);
         text-align: center;
-        font-size: 1.5em;
+        font-size: 1.5rem;
         margin-top: 0;
         text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);   
     }
@@ -109,7 +119,7 @@ body{
         background-color: transparent;
         border: solid 2px var(--color-trascenti-a-analogous1);
         color: white;
-        font-size: 1.2em;
+        font-size: 1.2rem;
         padding: 10px;
         padding-left: 20px;
         padding-right: 20px;
@@ -133,7 +143,7 @@ body{
     a {
         text-decoration: none;
         color: white;
-        font-size: 1.2em;
+        font-size: 1.2rem;
         padding: 10px;
         /* border-radius: 5px; */
         border: transparent solid 2px;
@@ -203,7 +213,7 @@ body{
 }
 .pageheader{
     color: var(--color-trascenti-accent);
-    font-size: min(5vw, 1.5em);
+    font-size: min(5vw, 1.5rem);
     margin-top: 0;
     text-align: center;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);   
@@ -260,7 +270,7 @@ body{
         /* transition: transform 0.3s; */
         h2{
             text-align: left;
-            font-size: min(1.25em, 1.5em);
+            font-size: min(1.25rem, 1.5rem);
         };
         .cardheader {
             min-height: 72px;
@@ -334,14 +344,14 @@ body{
     height: 100%;
     h2 {
         color: var(--color-trascenti-a-analogous1);
-        font-size: min(5vw, 1.5em);
+        font-size: min(5vw, 1.5rem);
         margin-top: 15px;
         text-align: left;
         text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);   
     };
     p{
         color: var(--color-lightest);
-        font-size: min(5vw, 1.2em);
+        font-size: min(5vw, 1.2rem);
         margin-top: 0;
         text-align: left;
         text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);   
@@ -367,14 +377,14 @@ body{
     height: 100%;
     h2 {
         color: var(--color-trascenti-a-analogous1);
-        font-size: min(5vw, 1.5em);
+        font-size: min(5vw, 1.5rem);
         margin-top: 15px;
         text-align: left;
         text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);   
     };
     p{
         color: var(--color-lightest);
-        font-size: min(5vw, 1.2em);
+        font-size: min(5vw, 1.2rem);
         margin-top: 0;
         text-align: left;
         text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);   
@@ -389,14 +399,14 @@ body{
     height: 100%;
     label {
         color: var(--color-trascenti-a-analogous1);
-        font-size: min(5vw, 1.5em);
+        font-size: min(5vw, 1.5rem);
         margin-top: 15px;
         text-align: left;
         text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);   
     };
     input, textarea {
         color: var(--color-darkest);
-        font-size: 1.2em;
+        font-size: 1.2rem;
         margin-top: 0px;
         margin-bottom: 15px;
         text-align: left;
@@ -408,7 +418,7 @@ body{
     input[type=submit] {
         background-color: transparent;
         color: var(--color-lightest);
-        font-size: 1.2em;
+        font-size: 1.2rem;
         margin-top: 15px;
         padding: 10px;
         padding-left: 20px;
